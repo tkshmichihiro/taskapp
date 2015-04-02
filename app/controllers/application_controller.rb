@@ -7,4 +7,12 @@ class ApplicationController < ActionController::Base
     @projects = Project.all
   end
 
+  def show
+    @projects = Project.find(params[:id])
+  end
+
+  def new
+    @projects = Project.new
+  end
+
 end
