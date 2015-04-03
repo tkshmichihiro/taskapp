@@ -1,16 +1,3 @@
 <h1>Add new project</h1>
 
-<%= form_for @projects do |f| %>
-<p>
-  <%= f.label :title %> <br>
-  <%= f.text_field :title %>
-</p>
-
-<p>
-  <%= f.submit %>
-</p>
-
-
-
-
-<% end %>
+<%= render 'form' %>
