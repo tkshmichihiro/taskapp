@@ -27,8 +27,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
-# gem 'unicorn'
-
+# gem 'unic
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -43,3 +42,7 @@ group :development, :test do
   gem 'spring'
 end
 
+group :production do
+  gem 'pg', '0.15.1'
+  gem 'rails_12factor', '0.0.2'
+end
